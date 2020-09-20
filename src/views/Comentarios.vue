@@ -8,5 +8,6 @@
       <b>darth vader dice:</b>
       <label>yo soy tu padre!.</label>
     </p>
+     
   </div>
 </template>

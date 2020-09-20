@@ -73,10 +73,7 @@
     <router-link :to="paginar(true)">Siguiente</router-link>
     <p></p>
     <router-link :to="{name: 'comentarios'}">Ver comentarios</router-link>
-   <router-view></router-view>
-
-
-
+   <router-view />
   </div>
 </template>
 
