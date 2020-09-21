@@ -9,7 +9,13 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    alias: ['/inicio','/portada','/home']
+    alias: ['/inicio','/portada','/home'],
+    children:[
+      {
+      path: '',
+      component: () => import(/* webpackChunkName: "post" */ '../views/Post.vue'),
+      },
+      ]
   },
   {
     path: '/about',
@@ -35,9 +41,9 @@ const routes = [
           component: () => import(/* webpackChunkName: "comentarios" */ '../views/Comentarios.vue')
           
           },
-          ]
+                    ]
   },
-  {
+{
     path: '/administrador',
     name: 'Administrador',
     component: () => import(/* webpackChunkName: "administrador" */ '../views/Administrador.vue'),
@@ -56,11 +62,13 @@ const routes = [
             },
           ]
   },
+
     {
       path: '*',
       name:"NotFound",
       component: () => import(/* webpackChunkName: "notfound" */ '../views/NotFound.vue'),
-      }
+      },
+      
       
     
 ]

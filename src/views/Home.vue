@@ -5,7 +5,7 @@
       <span class="subheading">Noticias y reseñas de automóviles</span>
     </div>
     <div class="titulo">
-      <router-link to="/Post">
+      <router-link to="/Post/1">
         <h2 class="post-title">
           <strong>Chevrolet presenta la totalmente nueva Blazer</strong>
         </h2>

@@ -72,14 +72,16 @@
     <router-link :to="paginar(false)">Anterior</router-link>|
     <router-link :to="paginar(true)">Siguiente</router-link>
     <p></p>
-    <router-link :to="{name: 'comentarios'}">Ver comentarios</router-link>
-   <router-view />
+   <router-link :to="{name:'comentarios'}">Ver comentarios</router-link>
+  
   </div>
 </template>
 
 <script>
 export default {
+
   methods: {
+    
     paginar(siguiente) {
       let entrada = parseInt(this.$route.params.entrada);
       if (siguiente)
@@ -125,4 +127,6 @@ export default {
   margin: auto;
   padding: 30px;
 }
+
+
 </style>
